@@ -73,12 +73,6 @@
     "react-test-renderer": "18.0.0",
     "typescript": "^5.1.6"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn build && yarn test"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,ts,tsx}": [
       "eslint"
@@ -104,11 +98,6 @@
     "node_modules/",
     "lib/"
   ],
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "dependencies": {
     "lodash": "^4.17.21"
   }
